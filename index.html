@@ -1,0 +1,118 @@
+< <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kids Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌸 Pink Kids Restaurant 🌸</h1>
+  <p>Delicious & Healthy Food for Kids</p>
+</header>
+
+<section class="menu">
+
+  <div class="food-card">
+    <img src="images/kids-pizza.jpg" alt="Kids Pizza">
+    <h3>Kids Pizza</h3>
+    <p>Small pizza with cheese & vegetables</p>
+    <span>5€</span>
+    <button onclick="openForm('Kids Pizza')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-burger.jpg" alt="Kids Burger">
+    <h3>Kids Burger</h3>
+    <p>Mini burger with fresh ingredients</p>
+    <span>4€</span>
+    <button onclick="openForm('Kids Burger')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/chicken-nuggets.jpg" alt="Chicken Nuggets">
+    <h3>Chicken Nuggets</h3>
+    <p>Crispy nuggets for kids</p>
+    <span>4€</span>
+    <button onclick="openForm('Chicken Nuggets')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-pasta.jpg" alt="Kids Pasta">
+    <h3>Pasta</h3>
+    <p>Pasta with creamy sauce</p>
+    <span>4.5€</span>
+    <button onclick="openForm('Pasta')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-hotdog.jpg" alt="Hotdog">
+    <h3>Hotdog</h3>
+    <p>Soft hotdog with ketchup</p>
+    <span>3€</span>
+    <button onclick="openForm('Hotdog')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-fries.jpg" alt="Fries">
+    <h3>French Fries</h3>
+    <p>Golden crispy fries</p>
+    <span>2.5€</span>
+    <button onclick="openForm('French Fries')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-juice-strawberry.jpg" alt="Strawberry Juice">
+    <h3>Strawberry Juice</h3>
+    <p>Fresh strawberry juice</p>
+    <span>2€</span>
+    <button onclick="openForm('Strawberry Juice')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-juice-orange.jpg" alt="Orange Juice">
+    <h3>Orange Juice</h3>
+    <p>Natural orange juice</p>
+    <span>2€</span>
+    <button onclick="openForm('Orange Juice')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-cake.jpg" alt="Cake">
+    <h3>Cake</h3>
+    <p>Sweet cake for kids</p>
+    <span>3€</span>
+    <button onclick="openForm('Cake')">Order</button>
+  </div>
+
+  <div class="food-card">
+    <img src="images/kids-icecream.jpg" alt="Ice Cream">
+    <h3>Ice Cream</h3>
+    <p>Vanilla & strawberry ice cream</p>
+    <span>2.5€</span>
+    <button onclick="openForm('Ice Cream')">Order</button>
+  </div>
+
+</section>
+
+<!-- Order Form -->
+<div id="orderForm" class="form-container">
+  <form>
+    <h2>Order Food</h2>
+    <input type="text" id="foodName" readonly>
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea placeholder="Address" required></textarea>
+    <button type="submit">Send Order</button>
+    <button type="button" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<footer>
+    <p>2026 Pink Kids Restaurant</p>
+    
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
